@@ -16,11 +16,9 @@
 #include <sys/un.h>
 
 #include "askfile.h"
-#include "pwdfile.h"
 
 
 #define ASK_PASSWORD_DIR "/run/systemd/ask-password"
-#define PASSWORD_FILE_NAME "trash.bin"
 #define MOUNT_DIR "/run/systemd/ask-password-mnt"
 
 static char* password_device = NULL;

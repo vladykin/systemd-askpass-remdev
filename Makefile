@@ -3,7 +3,6 @@ TARGET=systemd-ask-password-remdev
 OBJECTDIR=build
 OBJECTFILES=\
     $(OBJECTDIR)/askfile.o \
-    $(OBJECTDIR)/pwdfile.o \
     $(OBJECTDIR)/main.o
 
 SRCFLAGS=-pedantic -Wall -Wextra -std=c99 -D_GNU_SOURCE -D_BSD_SOURCE
