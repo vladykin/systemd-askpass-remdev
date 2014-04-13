@@ -85,8 +85,6 @@ static void ask_password(const char *filename) {
         return;
     }
 
-    printf("Packet: %s\n", buf);
-
     if (access(askfile->socket_path, W_OK) < 0) {
         fprintf(stderr, "No access to socket\n");
         return;
