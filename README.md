@@ -15,10 +15,10 @@ Copy it to some directory which is available during boot, e.g. `/usr/local/bin`.
 
 Copy two provided systemd unit files (\*.path and \*.service) to `/etc/systemd/system` and edit the \*.service one:
 
-* in the Requires line specify the device unit corresponding to your removable drive
+* in the Requires and After lines specify the device unit corresponding to your removable drive
 * in the ExecStart line specify path to `systemd-ask-password-remdev`,   the removable device, its filesystem type and path to password file on the device
 
-Create directory `/etc/systemd/system/sysinit.target.wants` and inside it create symlink to `systemd-ask-password-remdev.path`.
+Execute `systemctl enable systemd-ask-password-remdev.path`.
 
 
 ### Tested on
